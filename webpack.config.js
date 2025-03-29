@@ -33,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html', // Укажите путь к вашему шаблону HTML
+      template: './src/index.html', // Укажите путь к вашему шаблону HTML
       filename: 'index.html', // Имя выходного файла
       inject: 'body', // Вставка скриптов в конец body
     }),

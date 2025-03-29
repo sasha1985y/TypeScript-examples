@@ -16,7 +16,7 @@ module.exports = {
       },
     ]
   },
-  mode: 'development', // Измените на 'development'
+  mode: 'production', // Измените на 'development'
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
@@ -24,7 +24,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true, // Очищать папку dist перед каждой сборкой
-    publicPath: '/(root)', // Добавьте это
+    publicPath: '/', // Добавьте это
   },
   devtool: 'source-map', // Для генерации sourcemaps
   devServer: {

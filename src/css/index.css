@@ -1,0 +1,11 @@
+:root {
+    --bacground: rgb(50, 8, 56);
+}
+
+#root {
+    background-color: var(--bacground);
+    width: 30vw;
+    height: 20vh;
+    text-align: center;
+    color: aqua;
+}

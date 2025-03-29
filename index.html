@@ -1,11 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>Примеры TypeScript-кода</title>
+    <style>
+
+        header {
+            text-align: center;
+            min-height: 35vh;
+            background: url('pano.jpg') fixed;
+            background-repeat: no-repeat;
+            background-size: auto 55%;
+        }
+
+        main {
+            background: url('author.jpg') fixed no-repeat 0 50%, url('job.jpg') fixed no-repeat 50% 100%, url('evening.jpg') fixed no-repeat 99% 0;
+            background-size: auto 97%;
+            text-align: end;
+        }
+
+        footer {
+            min-height: 5vh;
+        }
+
+        .text {
+            position: relative;
+            display: inline;
+            top: 6vh;
+            color: var(--bacground-color);
+            font-size: xx-large;
+        }
+
+        .applogo {
+            width: 10%;
+            height: 10%;
+            transition: all 1.5s;
+        }
+
+        .applogo:hover {
+            transition: all 2s;
+            -webkit-transform: scale(1.5) rotate(1440deg);
+            -ms-transform: scale(1.5) rotate(1440deg);
+            transform: scale(1.5) rotate(1440deg);
+        }
+
+        @media (min-width: 320px) {
+            .text {
+                top: 76vw;
+                font-size: large;
+                color: var(--dark-color);
+            }
+        }
+
+        @media (min-width: 425px) {
+            .text {
+                top: 56vw;
+                font-size: x-large;
+                color: var(--dark-color);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .text {
+                top: 33vw;
+                font-size: x-large;
+                color: var(--grey-color);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .text {
+                top: 23vw;
+                font-size: x-large;
+                color: var(--a-color);
+            }
+
+            header {
+                background-size: auto 56%;
+            }
+        }
+
+        @media (min-width: 1258px) {
+            .text {
+                top: 25.2vw;
+                font-size: x-large;
+                color: var(--bacground-color);
+                font-size: xx-large;
+            }
+
+            header {
+                background-size: auto 68.2%;
+            }
+
+            main {
+                background: url('author.jpg') fixed no-repeat 0 50%, url('job.jpg') fixed no-repeat 50% 100%, url('evening.jpg') fixed no-repeat 99% 0;
+                background-size: auto 113%;
+                text-align: end;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <select name="linkSelect" id="linkSelect"></select>
+    </header>
+    <main>
+        <div class="text">В этом блоке рассмотрим примеры работы TypeScript</div>
+    </main>
+    <!-- <img src="logo.svg" alt="logo" class="applogo"> -->
     <a href="./dist/index.html">главная</a>
+    <footer></footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

@@ -16,7 +16,7 @@ module.exports = {
       },
     ]
   },
-  mode: 'production', // Измените на 'development'
+  mode: 'development', // Измените на 'development'
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },

@@ -24,7 +24,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true, // Очищать папку dist перед каждой сборкой
-    publicPath: '/', // Добавьте это
+    publicPath: '/(root)', // Добавьте это
   },
   devtool: 'source-map', // Для генерации sourcemaps
   devServer: {

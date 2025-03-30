@@ -12,7 +12,7 @@ if (typeof document !== 'undefined') {
             }
         }
 
-        greet("govno");
+        greet("my_Friend!");
     });
 } else {
     console.log("This code is running outside of a browser environment.");

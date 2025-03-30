@@ -22,16 +22,79 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `:root {
-    --bacground: rgb(50, 8, 56);
+    --bacground-color: #2F8CAE;
+    --font-size: 24px;
+    --dark-color: #323635;
+    --grey-color: #485464;
+    --color: #12e62e;
+    --a-color: #c4a113;
+    --special-text-color: #ffbb00;
+    --margin: 0;
+    --padding: 0;
 }
 
-#root {
-    background-color: var(--bacground);
-    width: 30vw;
-    height: 20vh;
+.visually-hidden {
+    display: none;
+}
+
+body {
+    background-color: var(--dark-color);
     text-align: center;
-    color: aqua;
-}`, "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAAA;IACI,2BAA2B;AAC/B;;AAEA;IACI,kCAAkC;IAClC,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,WAAW;AACf","sourcesContent":[":root {\n    --bacground: rgb(50, 8, 56);\n}\n\n#root {\n    background-color: var(--bacground);\n    width: 30vw;\n    height: 20vh;\n    text-align: center;\n    color: aqua;\n}"],"sourceRoot":""}]);
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--a-color);
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+
+#getResponse {
+    font-size: 2em;
+    color: var(--color);
+    background-color: var(--dark-color);
+}
+
+#getInterseptor_1,
+#getInterseptor_2 {
+    color: var(--special-text-color);
+}
+
+.test {
+    color: var(--special-text-color);
+}
+
+header {
+    text-align: center;
+    min-height: 10vh;
+    max-width: 100vw;
+}
+
+main {
+    min-height: 60vh;
+    max-width: 100vw;
+    background-color: var(--dark-color);
+}
+
+footer {
+    min-height: 20vh;
+    max-width: 100vw;
+    text-align: center;
+}
+
+.code-example-btn {
+    width: 10vw;
+    height: 5vw;
+    border: solid 1px var(--bacground-color);
+    color: var(--special-text-color);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+}`, "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAAA;IACI,0BAA0B;IAC1B,iBAAiB;IACjB,qBAAqB;IACrB,qBAAqB;IACrB,gBAAgB;IAChB,kBAAkB;IAClB,6BAA6B;IAC7B,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,mCAAmC;IACnC,kBAAkB;IAClB,iBAAiB;IACjB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,iBAAiB;IACjB,qBAAqB;AACzB;;AAEA;IACI,cAAc;IACd,mBAAmB;IACnB,mCAAmC;AACvC;;AAEA;;IAEI,gCAAgC;AACpC;;AAEA;IACI,gCAAgC;AACpC;;AAEA;IACI,kBAAkB;IAClB,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,mCAAmC;AACvC;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,WAAW;IACX,wCAAwC;IACxC,gCAAgC;IAChC,kBAAkB;IAClB,6BAA6B;AACjC","sourcesContent":[":root {\n    --bacground-color: #2F8CAE;\n    --font-size: 24px;\n    --dark-color: #323635;\n    --grey-color: #485464;\n    --color: #12e62e;\n    --a-color: #c4a113;\n    --special-text-color: #ffbb00;\n    --margin: 0;\n    --padding: 0;\n}\n\n.visually-hidden {\n    display: none;\n}\n\nbody {\n    background-color: var(--dark-color);\n    text-align: center;\n    min-height: 100vh;\n    max-width: 100vw;\n}\n\nul {\n    list-style: none;\n}\n\na {\n    color: var(--a-color);\n    font-size: 2.2rem;\n    text-decoration: none;\n}\n\n#getResponse {\n    font-size: 2em;\n    color: var(--color);\n    background-color: var(--dark-color);\n}\n\n#getInterseptor_1,\n#getInterseptor_2 {\n    color: var(--special-text-color);\n}\n\n.test {\n    color: var(--special-text-color);\n}\n\nheader {\n    text-align: center;\n    min-height: 10vh;\n    max-width: 100vw;\n}\n\nmain {\n    min-height: 60vh;\n    max-width: 100vw;\n    background-color: var(--dark-color);\n}\n\nfooter {\n    min-height: 20vh;\n    max-width: 100vw;\n    text-align: center;\n}\n\n.code-example-btn {\n    width: 10vw;\n    height: 5vw;\n    border: solid 1px var(--bacground-color);\n    color: var(--special-text-color);\n    border-radius: 5px;\n    box-shadow: 3px 3px 3px black;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -570,7 +633,7 @@ if (typeof document !== 'undefined') {
                 console.log("Root element not found");
             }
         }
-        greet("govno");
+        greet("my_Friend!");
     });
 }
 else {

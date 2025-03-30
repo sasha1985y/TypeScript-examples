@@ -613,9 +613,9 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
 (() => {
-var exports = __webpack_exports__;
+var exports = {};
 /*!**********************!*\
   !*** ./src/greet.ts ***!
   \**********************/
@@ -638,6 +638,68 @@ if (typeof document !== 'undefined') {
 }
 else {
     console.log("This code is running outside of a browser environment.");
+}
+
+})();
+
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
+(() => {
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+
+if (typeof document !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', () => {
+        function createDropdown() {
+            var select = document.getElementById("linkSelect");
+            if (select === null) {
+                return;
+            }
+            else {
+                select.onchange = navigate;
+                var options = [
+                    { value: "", text: "Выберите ссылку" },
+                    { value: "https://sasha1985y.github.io/TypeScript-examples/dist/index.html", text: "пример" },
+                ];
+                options.forEach(function (option) {
+                    var opt = document.createElement("option");
+                    opt.value = option.value;
+                    opt.textContent = option.text;
+                    if (select === null) {
+                        return;
+                    }
+                    else {
+                        select.appendChild(opt);
+                    }
+                });
+            }
+        }
+        function navigate() {
+            var select = document.getElementById("linkSelect");
+            if (select === null) {
+                return;
+            }
+            else {
+                var url = select.innerText;
+            }
+            if (url) {
+                window.location.href = url;
+            }
+        }
+        function getExample() {
+            const codeExampleBtn = document.querySelector(".code-example-btn");
+            const codeExample = document.querySelector(".code-example");
+            if (codeExampleBtn === null || codeExample === null) {
+                return;
+            }
+            else {
+                codeExampleBtn.addEventListener('click', () => {
+                    codeExample.classList.toggle("visually-hidden");
+                });
+            }
+        }
+        window.onload = createDropdown;
+    });
 }
 
 })();

@@ -6,7 +6,7 @@ function createDropdown() {
     // Создаем опции
     var options = [
         { value: "", text: "Выберите ссылку" },
-        { value: "https://sasha1985y.github.io/TypeScript-examples/index.html", text: "пример" },
+        { value: "https://sasha1985y.github.io/TypeScript-examples/dist/index.html", text: "пример" },
     ];
 
     options.forEach(function(option) {

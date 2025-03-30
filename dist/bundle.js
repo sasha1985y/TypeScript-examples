@@ -659,7 +659,7 @@ if (typeof document !== 'undefined') {
                 select.onchange = navigate;
                 var options = [
                     { value: "", text: "Выберите ссылку" },
-                    { value: "https://sasha1985y.github.io/TypeScript-examples/dist/index.html", text: "пример" },
+                    { value: "https://sasha1985y.github.io/TypeScript-examples/", text: "Домой" },
                 ];
                 options.forEach(function (option) {
                     var opt = document.createElement("option");
